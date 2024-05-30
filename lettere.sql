@@ -149,8 +149,28 @@ INSERT INTO `lettere` (`ID`, `Libro`, `Lettera`, `Pinyin`, `Traduzione`) VALUES
 (107, '1', '季', 'jì', 'Stagione'),
 (108, '1', '儿', 'ér', 'Figlio'),
 (109, '1', '看 ', 'kàn', 'Guardare'),
-(110, '1', '认 ', 'rèn', 'Riconoscere');
-
+(110, '1', '认 ', 'rèn', 'Riconoscere'),
+(111, '1', '方 ', 'fāng', ''),
+(112, '1', '向', 'xiàng', ''),
+(113, '1', '面', 'miàn', ''),
+(114, '1', '太', 'tài', 'Troppo?'),
+(115, '1', '阳', 'yáng', ''),
+(116, '1', '东 ', 'dōng', 'Est'),
+(117, '1', '西 ', 'xī', 'Ovest'),
+(118, '1', '北', 'běi', 'Nord'),
+(119, '1', '南', 'nán', 'Sud'),
+(120, '1', '新', 'xīn', 'Nuovo'),
+(121, '1', '到', 'dào', 'Arrivare'),
+(122, '1', '热 ', 'rè', 'Caldo'),
+(123, '1', '闹', 'nào', ''),
+(124, '1', '穿', 'chuān', 'Vestire'),
+(125, '1', '衣', 'yī', 'Vestito'),
+(126, '1', '戴 ', 'dài', 'Portare'),
+(127, '1', '帽', 'mào', 'Cappello'),
+(128, '1', '祝', 'zhù', 'Augurare'),
+(129, '1', '身', 'shēn', 'Corpo'),
+(130, '1', '体', 'tǐ', 'Corpo?'),
+(131, '1', '习', 'xí', 'Abitudine');
 --
 -- Indici per le tabelle scaricate
 --
@@ -169,7 +189,7 @@ ALTER TABLE `lettere`
 -- AUTO_INCREMENT per la tabella `lettere`
 --
 ALTER TABLE `lettere`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=111;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=132;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
