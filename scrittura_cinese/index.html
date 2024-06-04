@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/css.css">
+        <meta charset="UTF-8">
+
+    </head>
+    <body>
+        <h1>Generatore di lettere in cinese casule</h1>
+        <div id="form">
+            <div id="form1">
+                <form action="php/Creazione_Database.php" method="post">
+                    <input type="submit"value="Creazione database">
+                </form>
+            </div>
+            <div id="form2">
+                <form action="php/Lettura_Database.php" method="post">
+                    <input type="submit" value="Lettura database">
+                </form>
+            </div>
+            <div id="form3">
+                <form action="php/Cancellazione_Database.php" method="post">
+                    <input type="submit" value="Cancellazione database">
+                </form>
+            </div>
+        </div>
+        <div id="inserimento_dati">
+            <form action="php/inserimento.php" method="post">
+                <table>
+                    <tr><th>Libro</th><td><input type="text" required name="libro"></td></tr>
+                    <tr><th>Lettera</th><td><input type="text" required name="lettera"></td></tr>
+                    <tr><th>Pinyin</th><td><input type="text" required name="pinyin"></td></tr>
+                    <tr><th>Traduzione</th><td><input type="text"  name="traduzione"></td></tr>
+                    <tr><td><input type="submit" value="Aggiungi" id="pulsante"></td></tr>
+                </table>
+            </form>
+        </div>
+        <div id="generatore_dati">
+            <form action="php/generatore.php" method="post">
+                <table>
+                    <tr><th>Libro di testo</th><td><input type="text" name="testo"></td></tr>
+                    <tr><th>Numero di lettere</th><td><input type="text" name="numero_lettere"></td></tr>
+                    <tr><td><input type="submit" value="Genera" id="pulsante_genera"></td></tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
