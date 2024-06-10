@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Giu 04, 2024 alle 11:14
+-- Creato il: Giu 10, 2024 alle 10:01
 -- Versione del server: 10.4.28-MariaDB
 -- Versione PHP: 8.2.4
 
@@ -204,7 +204,19 @@ INSERT INTO `lettere` (`ID`, `Libro`, `Lettera`, `Pinyin`, `Traduzione`) VALUES
 (162, '2', '问', 'wèn', 'Chiedere'),
 (163, '2', '谁 ', 'shéi', 'Chi?'),
 (164, '2', '听 ', 'tīng', 'Ascoltare'),
-(165, '2', '心 ', 'xīn', 'Cuore');
+(165, '2', '心 ', 'xīn', 'Cuore'),
+(166, '2', '用', 'yòng', 'Usare'),
+(167, '2', '记 ', 'jì', 'Ricordare'),
+(168, '2', '清', 'qīng', 'Prego'),
+(169, '2', '对', 'duì', 'Giusto/si'),
+(170, '2', '谢 ', 'xiè', 'Grazie'),
+(171, '2', '起', 'qǐ', 'Alzarsi'),
+(172, '2', '没 ', 'méi', 'Negazione?'),
+(173, '2', '关', 'guān', ''),
+(174, '2', '系', 'xì', ''),
+(175, '2', '再', 'zài', 'Di nuovo'),
+(176, '2', '做', 'zuò', 'Fare qualcosa'),
+(177, '2', '孩', 'hái', 'Bimbo');
 
 --
 -- Indici per le tabelle scaricate
@@ -224,7 +236,7 @@ ALTER TABLE `lettere`
 -- AUTO_INCREMENT per la tabella `lettere`
 --
 ALTER TABLE `lettere`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=166;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=178;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
