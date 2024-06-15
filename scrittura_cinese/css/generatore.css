@@ -1,0 +1,82 @@
+/* Stile base per il body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Stile per l'intestazione */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Stile per il bottone */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Stile per il link */
+a {
+    text-decoration: none;
+    color: #007bff;
+    margin-left: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Stile per la tabella */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #dddddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Stile per righe dispari della tabella */
+tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Stile per righe pari della tabella */
+tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Stile per i link nella tabella */
+table a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}

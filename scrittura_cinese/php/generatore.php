@@ -1,6 +1,7 @@
 <html>
   <head>
   	<script type="text/javascript" src="../js/javascript.js"></script>
+	  <link rel="stylesheet" href="../css/generatore.css">
   </head>
   <body>
   	<?php
@@ -16,7 +17,6 @@
         $inizio = $_POST["inizio"];
 		$fine = $_POST["fine"];
         $numero_lettere = $_POST["numero_lettere"];
-		echo"$inizio $fine";
         $query_sql="SELECT* FROM lettere";
 	    $risultato_query=$connessione->query($query_sql);
 	    $righe=$risultato_query->num_rows;

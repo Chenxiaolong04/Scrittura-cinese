@@ -1,0 +1,117 @@
+/* css/css.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#form {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#form1, #form2, #form3 {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#form input[type="submit"] {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#form input[type="submit"]:hover {
+    background: linear-gradient(135deg, #feb47b, #ff7e5f);
+    transform: scale(1.05);
+}
+
+#form input[type="submit"]:active {
+    transform: scale(1);
+}
+
+#data-forms {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 1200px; /* Assicura che i form si adattino alla larghezza */
+}
+
+#inserimento_dati, #generatore_dati {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+#pulsante, #pulsante_genera {
+    background: linear-gradient(135deg, #7e5fff, #57b4ff);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#pulsante:hover, #pulsante_genera:hover {
+    background: linear-gradient(135deg, #57b4ff, #7e5fff);
+    transform: scale(1.05);
+}
+
+#pulsante:active, #pulsante_genera:active {
+    transform: scale(1);
+}
+
+p {
+    margin: 5px 0;
+    text-align: center; /* Centro i paragrafi per un aspetto migliore */
+}
+
+/* Stile per i paragrafi fuori dal form */
+#info_paragraphs {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+    text-align: center;
+}

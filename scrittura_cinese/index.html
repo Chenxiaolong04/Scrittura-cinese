@@ -1,50 +1,61 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="css/css.css">
-        <meta charset="UTF-8">
-
-    </head>
-    <body>
-        <h1>Generatore di lettere in cinese casule</h1>
-        <div id="form">
-            <div id="form1">
-                <form action="php/Creazione_Database.php" method="post">
-                    <input type="submit"value="Creazione database">
-                </form>
-            </div>
-            <div id="form2">
-                <form action="php/Lettura_Database.php" method="post">
-                    <input type="submit" value="Lettura database">
-                </form>
-            </div>
-            <div id="form3">
-                <form action="php/Cancellazione_Database.php" method="post">
-                    <input type="submit" value="Cancellazione database">
-                </form>
-            </div>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Generatore di lettere in cinese casuale</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <h1>Generatore di lettere in cinese casuale</h1>
+    <div id="form">
+        <!-- Form per la creazione del database -->
+        <div id="form1">
+            <form action="php/Creazione_Database.php" method="post">
+                <input type="submit" value="Creazione database">
+            </form>
         </div>
+        <!-- Form per la lettura del database -->
+        <div id="form2">
+            <form action="php/Lettura_Database.php" method="post">
+                <input type="submit" value="Lettura database">
+            </form>
+        </div>
+        <!-- Form per la cancellazione del database -->
+        <div id="form3">
+            <form action="php/Cancellazione_Database.php" method="post">
+                <input type="submit" value="Cancellazione database">
+            </form>
+        </div>
+    </div>
+    <div id="data-forms">
+        <!-- Form per l'inserimento dei dati -->
         <div id="inserimento_dati">
             <form action="php/inserimento.php" method="post">
                 <table>
                     <tr><th>Libro</th><td><input type="text" required name="libro"></td></tr>
                     <tr><th>Lettera</th><td><input type="text" required name="lettera"></td></tr>
                     <tr><th>Pinyin</th><td><input type="text" required name="pinyin"></td></tr>
-                    <tr><th>Traduzione</th><td><input type="text"  name="traduzione"></td></tr>
-                    <tr><td><input type="submit" value="Aggiungi" id="pulsante"></td></tr>
+                    <tr><th>Traduzione</th><td><input type="text" name="traduzione"></td></tr>
+                    <tr><td colspan="2"><input type="submit" value="Aggiungi" id="pulsante"></td></tr>
                 </table>
             </form>
         </div>
+        <!-- Form per la generazione dei dati -->
         <div id="generatore_dati">
             <form action="php/generatore.php" method="post">
                 <table>
-                    <tr><th>Inizio</th><td><input type="text" name="inizio"></td></tr>
-                    <tr><th>Fine</th><td><input type="text" name="fine"></td></tr>
-                    <tr><th>Numero di lettere</th><td><input type="text" name="numero_lettere"></td></tr>
-                    <tr><td><input type="submit" value="Genera" id="pulsante_genera"></td></tr>
+                    <tr><th>Inizio</th><td><input type="text" name="inizio" required></td></tr>
+                    <tr><th>Fine</th><td><input type="text" name="fine" required></td></tr>
+                    <tr><th>Numero di lettere</th><td><input type="text" name="numero_lettere" required></td></tr>
+                    <tr><td colspan="2"><input type="submit" value="Genera" id="pulsante_genera"></td></tr>
                 </table>
             </form>
-            <p>Libro 1: 1-131</p>
-            <p>Libro 2: 132-177</p>
         </div>
-    </body>
+    </div>
+    <div id="info_paragraphs">
+        <!-- Informazioni sui range di libri -->
+        <p>Libro 1: 1-131</p>
+        <p>Libro 2: 132-177</p>
+    </div>
+</body>
 </html>

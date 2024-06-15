@@ -1,4 +1,9 @@
-<?php
+<html>
+	<head>
+	<link rel="stylesheet" href="../css/lettura_database.css">
+	</head>
+	<body>
+	<?php
 		//Connessione a MySQL e selezione Database
             $nomehost="localhost";
             $username="root";
@@ -25,3 +30,5 @@
 	    echo"</table">
 	    $connessione->close();
 ?>
+	</body>
+</html>
